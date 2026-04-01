@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprofitzone | Smart Crypto Trading</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://api.dicebear.com/7.x/avataaars/svg?seed=Fox&backgroundColor=ff7f00">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <div class="theme-btn active" data-theme="dark" title="Dark Mode"
+            style="background: var(--section-bg); border-color: #ff7a00; display: flex; align-items: center; justify-content: center; color: white;">
+            <i class="fa-solid fa-moon" style="font-size: 14px;"></i>
+        </div>
+        <div class="theme-btn" data-theme="light" title="Light Mode"
+            style="background: var(--section-bg); border-color: #ff7a00; display: flex; align-items: center; justify-content: center; color: black;">
+            <i class="fa-solid fa-sun" style="font-size: 14px;"></i>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="events-images-and-videos/logo.jpeg" alt="Sprofitzone Logo" class="logo-img"
+                    style="height: 45px; border-radius: 5px;">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="mentorship.html">Mentorship Program</a></li>
+                <li><a href="academy.html">Academy</a></li>
+                <li><a href="academy-highlights.html">Academy Highlights</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="#plans" class="btn btn-primary desktop-only-btn">Join Now</a>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <i class="fa-solid fa-xmark close-menu"></i>
+            <ul class="mobile-nav-links">
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li><a href="partners.html" class="mobile-link">Partners</a></li>
+                <li><a href="mentorship.html" class="mobile-link">Mentorship Program</a></li>
+                <li><a href="academy.html" class="mobile-link">Academy</a></li>
+                <li><a href="academy-highlights.html" class="mobile-link">Academy Highlights</a></li>
+                <li><a href="about.html" class="mobile-link">About</a></li>
+                <li><a href="contact.html" class="mobile-link">Contact Us</a></li>
+            </ul>
+            <a href="#plans" class="mobile-join-btn">Join Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="bg-glow"></div>
+        <div class="container hero-content" data-aos="fade-up">
+            <h1>YOUR BEST <span class="highlight"> Forex & CRYPTO TRADING</span> EXPERIENCE STARTS NOW</h1>
+            <p>Trade with confidence using Sprofitzone's advanced AI-driven signals and expert community insights. Join
+                the
+                revolution today.</p>
+            <div class="hero-buttons">
+                <a href="#plans" class="btn btn-primary-gradient">Explore Plans</a>
+                <a href="academy.html" class="btn btn-secondary-outline"> BOOK 1:1 CALL </a>
+            </div>
+
+            <!-- Feature Box -->
+            <div class="hero-feature-box" data-aos="fade-up" data-aos-delay="200">
+                <h3 style="color:#111111; margin: 0; font-size: 1.5rem;">WE KNOW Forex & CRYPTO <span
+                        class="highlight">BEST</span></h3>
+                <p style="margin: 10px 0 0; color: #111111; font-size: 0.9rem;">Join Sprofitzone - the fastest growing
+                    community today.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Ticker -->
+    <section class="news-ticker">
+        <div class="ticker-wrapper">
+            <div class="ticker-track">
+                <span class="ticker-item">Trade with Confidence <i class="fa-solid fa-chart-line"></i></span>
+                <span class="ticker-item">Learn & Earn <i class="fa-solid fa-graduation-cap"></i></span>
+                <span class="ticker-item">Level Up Your Trading Game <i class="fa-solid fa-trophy"></i></span>
+                <span class="ticker-item">Empower Your Trading Journey <i class="fa-solid fa-rocket"></i></span>
+                <span class="ticker-item">Your Edge Starts Here <i class="fa-solid fa-star"></i></span>
+                <!-- Duplicate for seamless loop -->
+                <span class="ticker-item">Trade with Confidence <i class="fa-solid fa-chart-line"></i></span>
+                <span class="ticker-item">Learn & Earn <i class="fa-solid fa-graduation-cap"></i></span>
+                <span class="ticker-item">Level Up Your Trading Game <i class="fa-solid fa-trophy"></i></span>
+                <span class="ticker-item">Empower Your Trading Journey <i class="fa-solid fa-rocket"></i></span>
+                <span class="ticker-item">Your Edge Starts Here <i class="fa-solid fa-star"></i></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Services with Running Carousel -->
+    <section class="services-carousel" id="services" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>PROFESSIONAL Forex & CRYPTO SERVICES <span class="highlight">BY SPROFITZONE</span></h2>
+            </div>
+
+            <div class="carousel-track-container">
+                <!-- Doubled content for infinite loop -->
+                <div class="carousel-track">
+                    <!-- Set 1 -->
+                    <div class="carousel-card">
+                        <div class="carousel-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h4>Market Analysis</h4>
+                        <p>Daily in-depth market signals.</p>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="carousel-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h4>Secure Trading</h4>
+                        <p>Top-tier security protocols.</p>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="carousel-icon"><i class="fa-solid fa-robot"></i></div>
+                        <h4>AI Signals</h4>
+                        <p>Automated trading suggestions.</p>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="carousel-icon"><i class="fa-solid fa-users"></i></div>
+                        <h4>Community</h4>
+                        <p>Join 50k+ active traders.</p>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="carousel-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h4>Education</h4>
+                        <p>Learn from global experts.</p>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="carousel-icon"><i class="fa-brands fa-bitcoin"></i></div>
+                        <h4>Portfolio Mgmt</h4>
+                        <p>Track your assets easily.</p>
+                    </div>
+
+                    <!-- Set 2 (Duplicate for smooth loop) -->
+                    <div class="carousel-card">
+                        <div class="carousel-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h4>Market Analysis</h4>
+                        <p>Daily in-depth market signals.</p>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="carousel-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h4>Secure Trading</h4>
+                        <p>Top-tier security protocols.</p>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="carousel-icon"><i class="fa-solid fa-robot"></i></div>
+                        <h4>AI Signals</h4>
+                        <p>Automated trading suggestions.</p>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="carousel-icon"><i class="fa-solid fa-users"></i></div>
+                        <h4>Community</h4>
+                        <p>Join 50k+ active traders.</p>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="carousel-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h4>Education</h4>
+                        <p>Learn from global experts.</p>
+                    </div>
+                    <div class="carousel-card">
+                        <div class="carousel-icon"><i class="fa-brands fa-bitcoin"></i></div>
+                        <h4>Portfolio Mgmt</h4>
+                        <p>Track your assets easily.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us-section" id="about" style="padding: 100px 0; background: var(--section-bg);">
+        <div class="container">
+            <div class="about-grid" style="display: flex; flex-wrap: wrap; align-items: center; gap: 50px;">
+                <div class="about-content" data-aos="fade-right" style="flex: 1; min-width: 300px;">
+                    <span class="highlight" style="font-weight: 600; text-transform: uppercase;">About
+                        Sprofitzone</span>
+                    <h2 style="font-size: 2.5rem; margin-top: 10px; margin-bottom: 20px;">We Provide The Best <span
+                            class="highlight">Forex & Crypto Experience</span></h2>
+                    <p style="color: #666; margin-bottom: 30px; line-height: 1.8;">
+                        Sprofitzone is dedicated to empowering traders with the knowledge, tools, and community required
+                        to succeed in the fast-paced world of cryptocurrency. We deliver AI-driven signals, expert
+                        market analysis, and comprehensive educational resources to help you make informed decisions.
+                    </p>
+                    <div class="trust-badges"
+                        style="display: flex; gap: 20px; align-items: center; margin-bottom: 30px;">
+                        <div class="badge"
+                            style="display: flex; align-items: center; gap: 10px; background: #f9f9f9; padding: 10px 15px; border-radius: 10px; border: 1px solid #e0e0e0;">
+                            <i class="fa-solid fa-shield-halved" style="font-size: 1.5rem; color: var(--primary);"></i>
+                            <span style="font-weight: 600; color: #1a1a1a;">Secure Platform</span>
+                        </div>
+                        <div class="badge"
+                            style="display: flex; align-items: center; gap: 10px; background: #f9f9f9; padding: 10px 15px; border-radius: 10px; border: 1px solid #e0e0e0;">
+                            <i class="fa-solid fa-star" style="font-size: 1.5rem; color: var(--primary);"></i>
+                            <span style="font-weight: 600; color: #1a1a1a;">Top Rated</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left"
+                    style="flex: 1; min-width: 300px; position: relative; text-align: center;">
+                    <img src="events-images-and-videos/about.jpeg" alt="About Sprofitzone"
+                        style="max-width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <div
+                        style="position: absolute; bottom: -20px; right: -20px; background: var(--gradient-main); padding: 20px; border-radius: 15px; box-shadow: 0 10px 20px rgba(255,127,0,0.3); color: white; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+                        <h3 style="margin:0; font-size: 2rem; color:white;">5+</h3>
+                        <p style="margin:0; font-size: 0.9rem; color:white;">Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Community Section -->
+    <section class="community-section">
+        <div class="container">
+            <div class="section-header community-content" data-aos="fade-up">
+                <h2>JOIN <span class="highlight">SPROFITZONE</span> GLOBAL Forex & CRYPTO TRADING COMMUNITY</h2>
+                <p>Sprofitzone is a global Forex & crypto trading community that provides support and guidance around
+                    the clock,
+                    no
+                    matter which time zone you are in. Our community offers a helpful and collaborative environment
+                    where every question is answered, and every member's growth is valued. Here, you can improve your
+                    skills, learn continuously, and celebrate your successes. We not only guide you in trading but also
+                    give you the chance to be part of a united and passionate community, where experiences are shared
+                    and every achievement inspires others. Join today and start your crypto journey with confidence and
+                    success.</p>
+            </div>
+
+            <div class="globe-container stats-with-globe">
+                <div class="globe-bg">
+                    <div class="globe-dots"></div>
+                </div>
+
+                <div class="stats-grid">
+                    <!-- Top Left -->
+                    <div class="stat-box" data-aos="fade-up" data-count="20">
+                        <i class="fa-solid fa-trophy"></i>
+                        <div class="stat-text">
+                            <h3 class="stat-number">0</h3>
+                            <span>Countries</span>
+                        </div>
+                    </div>
+
+                    <!-- Top Right -->
+                    <div class="stat-box" data-aos="fade-up" data-aos-delay="100" data-count="10">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <div class="stat-text">
+                            <h3 class="stat-number">0</h3>
+                            <span>Expert Analysts</span>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Left -->
+                    <div class="stat-box" data-aos="fade-up" data-aos-delay="200" data-count="10000">
+                        <i class="fa-solid fa-certificate"></i>
+                        <div class="stat-text">
+                            <h3 class="stat-number">0</h3>
+                            <span>Active Telegram Members</span>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Right -->
+                    <div class="stat-box" data-aos="fade-up" data-aos-delay="300" data-count="5000">
+                        <i class="fa-solid fa-user-group"></i>
+                        <div class="stat-text">
+                            <h3 class="stat-number">K</h3>
+                            <span>Active Discord Members</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section" id="why-us" style="padding: 100px 0; background: var(--section-bg);">
+        <div class="container">
+            <div class="why-choose-grid" style="display: flex; flex-wrap: wrap; align-items: center; gap: 60px;">
+
+                <!-- Image Side -->
+                <div class="why-choose-image" data-aos="fade-right"
+                    style="flex: 1; min-width: 280px; position: relative; text-align: center;">
+                    <img src="events-images-and-videos/hero-banner--2.jpeg" alt="Why Choose Sprofitzone"
+                        style="max-width: 100%; border-radius: 20px; box-shadow: 0 20px 60px rgba(255,127,0,0.2);">
+                    <div
+                        style="position: absolute; top: -20px; left: -20px; background: var(--gradient-main); padding: 18px 24px; border-radius: 14px; box-shadow: 0 8px 20px rgba(255,127,0,0.35); color: white;">
+                        <i class="fa-solid fa-chart-line" style="font-size: 1.8rem;"></i>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="why-choose-content" data-aos="fade-left" style="flex: 1.2; min-width: 300px;">
+                    <span class="highlight" style="font-weight: 600; text-transform: uppercase; font-size: 0.9rem;">Why
+                        Sprofitzone?</span>
+                    <h2 style="font-size: 2.4rem; margin: 12px 0 24px; line-height: 1.25;">WHY <span
+                            class="highlight">CHOOSE US?</span></h2>
+                    <p style="color: var(--text-sec); line-height: 1.9; margin-bottom: 28px; font-size: 1rem;">
+                        At Sprofitzone, we bridge the gap between complex market data and your trading success by
+                        providing high-accuracy Forex and Crypto signals designed for consistency. Unlike typical alert
+                        services, our approach is rooted in institutional-grade analysis of major pairs, Gold (XAUUSD),
+                        and Bitcoin, ensuring every trade has a professional risk-to-reward ratio.
+                    </p>
+                    <p style="color: var(--text-sec); line-height: 1.9; margin-bottom: 28px; font-size: 1rem;">
+                        We prioritize transparency and education, offering a Mentorship Program that teaches you the
+                        strategy behind the signals so you can master the markets yourself. Whether you are testing the
+                        waters with our $4 One-Day Pass or committing to a Lifetime Membership, you are joining a
+                        global community dedicated to disciplined, sustainable growth.
+                    </p>
+                    <p style="color: var(--text-sec); line-height: 1.9; margin-bottom: 36px; font-size: 1rem;">
+                        Stop guessing the trend and start trading the zone with real-time insights built for the modern
+                        trader.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 16px;">
+                        <div
+                            style="display: flex; align-items: center; gap: 10px; background: var(--card-bg); border: 1px solid var(--primary); padding: 10px 18px; border-radius: 50px;">
+                            <i class="fa-solid fa-shield-halved" style="color: var(--primary);"></i>
+                            <span style="font-size: 0.9rem; font-weight: 600;">Institutional-Grade Signals</span>
+                        </div>
+                        <div
+                            style="display: flex; align-items: center; gap: 10px; background: var(--card-bg); border: 1px solid var(--primary); padding: 10px 18px; border-radius: 50px;">
+                            <i class="fa-solid fa-graduation-cap" style="color: var(--primary);"></i>
+                            <span style="font-size: 0.9rem; font-weight: 600;">Mentorship-First Approach</span>
+                        </div>
+                        <div
+                            style="display: flex; align-items: center; gap: 10px; background: var(--card-bg); border: 1px solid var(--primary); padding: 10px 18px; border-radius: 50px;">
+                            <i class="fa-solid fa-globe" style="color: var(--primary);"></i>
+                            <span style="font-size: 0.9rem; font-weight: 600;">Global Community</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MEET THE INFLUENCER Section -->
+    <section class="influencer-section" id="influencers" style="padding: 100px 0; background: var(--card-bg);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>MEET THE <span class="highlight">INFLUENCER</span></h2>
+                <p>Top influencers who trust and grow with Sprofitzone</p>
+            </div>
+
+            <!-- Swiper Influencer Carousel -->
+            <div class="swiper influencer-swiper" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <!-- Influencer 1 -->
+                    <div class="swiper-slide">
+                        <div class="influencer-card" style="text-align: center;">
+                            <div class="influencer-img-wrapper">
+                                <img src="events-images-and-videos/Shehriyar Ahmad influncer.jpeg"
+                                    alt="Shehriyar Ahmad">
+                            </div>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 5px;">Shehriyar Ahmad</h3>
+                        </div>
+                    </div>
+
+                    <!-- Influencer 2 -->
+                    <div class="swiper-slide">
+                        <div class="influencer-card" style="text-align: center;">
+                            <div class="influencer-img-wrapper">
+                                <img src="events-images-and-videos/Syed Najmul Hassan Gellani influncer.jpeg"
+                                    alt="Syed Najmul Hassan Gellani">
+                            </div>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 5px;">Syed Najmul Hassan Gellani</h3>
+                        </div>
+                    </div>
+
+                    <!-- Influencer 3 -->
+                    <div class="swiper-slide">
+                        <div class="influencer-card" style="text-align: center;">
+                            <div class="influencer-img-wrapper">
+                                <img src="events-images-and-videos/Ubaid Khan influncer.jpeg" alt="Ubaid Khan">
+                            </div>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 5px;">Ubaid Khan</h3>
+                        </div>
+                    </div>
+
+                    <!-- Influencer 4 -->
+                    <div class="swiper-slide">
+                        <div class="influencer-card" style="text-align: center;">
+                            <div class="influencer-img-wrapper">
+                                <img src="events-images-and-videos/Ubaid Yousaf influncerKhan.jpeg" alt="Ubaid Yousaf">
+                            </div>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 5px;">Ubaid Yousaf</h3>
+                        </div>
+                    </div>
+
+                    <!-- Influencer 5 -->
+                    <div class="swiper-slide">
+                        <div class="influencer-card" style="text-align: center;">
+                            <div class="influencer-img-wrapper">
+                                <img src="events-images-and-videos/Waqas Ahmad  influncer.jpeg" alt="Waqas Ahmad">
+                            </div>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 5px;">Waqas Ahmad</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Swiper Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Plans -->
+    <section class="membership-section" id="plans">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>MEMBERSHIP <span class="highlight">PLANS</span></h2>
+                <p>Select the plan that best fits your trading needs.</p>
+            </div>
+
+            <div class="pricing-grid">
+
+                <!-- Plan 0: 1-4 Days -->
+                <div class="pricing-card" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">1&ndash;4 Days Pass</h3>
+                        <p class="plan-subtitle"
+                            style="font-size: 0.9rem; margin-top: -10px; margin-bottom: 10px; color: #eee;">Trial Access
+                        </p>
+                        <div class="pricing-price"><span class="currency">$</span>4<span class="period">/ Pass</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Basic Forex &amp; Crypto Signals</li>
+                        <li>Account Creation Guidance</li>
+                        <li>Signal Community Access (4 Days)</li>
+                        <li>Basic Market Guidance</li>
+                    </ul>
+                    <p class="plan-tagline">Perfect for beginners who want to explore before committing.</p>
+                    <div class="pricing-action">
+                        <button class="btn-buy subscribe-btn" data-plan="1-4 Days Pass" data-price="$4">&#128314; Try
+                            Now</button>
+                    </div>
+                </div>
+
+
+                <div class="pricing-card" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Short-Term Pass</h3>
+                        <p class="plan-subtitle"
+                            style="font-size: 0.9rem; margin-top: -10px; margin-bottom: 10px; color: #eee;">1&ndash;7
+                            Days Access</p>
+                        <div class="pricing-price"><span class="currency">$</span>10<span class="period">/ Pass</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Forex &amp; Crypto Signals</li>
+                        <li>Gold &amp; Major Currency Pairs</li>
+                        <li>2 Live Classes per Week</li>
+                        <li>Basic Market Guidance</li>
+                    </ul>
+                    <p class="plan-tagline">Ideal for traders who want short-term access to test our service.</p>
+                    <div class="pricing-action">
+                        <button class="btn-buy subscribe-btn" data-plan="Short-Term Pass" data-price="$4">🟢 Get
+                            Started</button>
+                    </div>
+                </div>
+
+                <!-- Plan 2: Monthly -->
+                <div class="pricing-card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Monthly Plan</h3>
+                        <p class="plan-subtitle"
+                            style="font-size: 0.9rem; margin-top: -10px; margin-bottom: 10px; color: #eee;">Monthly
+                            Access</p>
+                        <div class="pricing-price"><span class="currency">$</span>50<span class="period">/ Month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>7+ Gold &amp; Currency Signals</li>
+                        <li>Complete Forex &amp; Crypto Education</li>
+                        <li>Market Structure Training</li>
+                        <li>FVG (Fair Value Gap) Strategy</li>
+                        <li>Order Block &amp; Breaker Block Concepts</li>
+                        <li>Liquidity &amp; Valid Liquidity Understanding</li>
+                    </ul>
+                    <p class="plan-tagline">Perfect for traders building strong fundamentals.</p>
+                    <div class="pricing-action">
+                        <button class="btn-buy subscribe-btn" data-plan="Monthly Plan" data-price="$50">🟢 Enroll
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Plan 3: Quarterly (Featured) -->
+                <div class="pricing-card gold" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="pricing-hot-label">Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Quarterly Plan</h3>
+                        <p class="plan-subtitle"
+                            style="font-size: 0.9rem; margin-top: -10px; margin-bottom: 10px; color: #fff;">3 Months
+                            Access</p>
+                        <div class="pricing-price"><span class="currency">$</span>125<span class="period">/
+                                Quarter</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Everything in Monthly Plan</li>
+                        <li>Advanced ICT Models</li>
+                        <li>Live Trading Classes</li>
+                        <li>Recorded Class Access</li>
+                        <li>Deeper Market Structure &amp; Entry Logic</li>
+                    </ul>
+                    <p class="plan-tagline">Designed for traders who want consistent development and advanced strategy
+                        knowledge.</p>
+                    <div class="pricing-action">
+                        <button class="btn-buy subscribe-btn" data-plan="Quarterly Plan" data-price="$125">🟢 Enroll
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Plan 4: 1 Year Premium -->
+                <div class="pricing-card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">1 Year Premium</h3>
+                        <p class="plan-subtitle"
+                            style="font-size: 0.9rem; margin-top: -10px; margin-bottom: 10px; color: #eee;">Annual
+                            Signals Plan</p>
+                        <div class="pricing-price"><span class="currency">$</span>299<span class="period">/ Year</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Premium Signal Group Access</li>
+                        <li>Live Trading Sessions</li>
+                        <li>Time-Based Entry Signals</li>
+                        <li>Session Trading &amp; Liquidity Grab Logic</li>
+                        <li>Daily Bias &amp; Body Close Strategy</li>
+                        <li>ICT All Models</li>
+                        <li>CRT Concepts &amp; Models</li>
+                        <li>Trading Psychology &amp; Discipline Classes</li>
+                    </ul>
+                    <p class="plan-tagline">Best for serious traders focused on performance and precision.</p>
+                    <div class="pricing-action">
+                        <button class="btn-buy subscribe-btn" data-plan="1 Year Premium" data-price="$330">🟢 Go
+                            Premium</button>
+                    </div>
+                </div>
+
+                <!-- Plan 5: Lifetime -->
+                <div class="pricing-card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Lifetime Plan</h3>
+                        <p class="plan-subtitle"
+                            style="font-size: 0.9rem; margin-top: -10px; margin-bottom: 10px; color: #eee;">Lifetime
+                            Access</p>
+                        <div class="pricing-price"><span class="currency">$</span>499<span class="period">/
+                                Lifetime</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Lifetime Signal Access</li>
+                        <li>One-to-One Mentorship</li>
+                        <li>Access to All Mentors</li>
+                        <li>All Education Modules Included</li>
+                        <li>CME Trading Concepts</li>
+                        <li>Equity Open Strategy</li>
+                        <li>NKZ Trade &amp; NSB Trade Models</li>
+                        <li>Advanced Time-Based &amp; Session Trading Strategies</li>
+                        <li>Psychology &amp; Discipline Mastery</li>
+                    </ul>
+                    <p class="plan-tagline">The ultimate all-in-one package for elite traders.</p>
+                    <div class="pricing-action">
+                        <button class="btn-buy subscribe-btn" data-plan="Lifetime Plan" data-price="$499">🟢 Join
+                            Lifetime</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Mentors Section -->
+    <section class="mentor-section" id="mentors">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>MEET OUR EXPERT <span class="highlight">MENTORS</span></h2>
+                <p>Learn from the best minds in crypto trading</p>
+            </div>
+
+            <!-- Swiper Mentor Carousel -->
+            <div class="swiper mentor-swiper" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <!-- Mentor 1: Ikram Khan -->
+                    <div class="swiper-slide">
+                        <div class="mentor-card">
+                            <div class="mentor-avatar-wrapper">
+                                <img src="events-images-and-videos/ikram.jpeg" alt="Ikram Khan"
+                                    class="mentor-avatar-img">
+                                <div class="mentor-glow"></div>
+                            </div>
+                            <h3>Ikram Khan</h3>
+                            <p class="mentor-title">Expert In Gold</p>
+                            <div class="mentor-stats">
+                                <div class="mentor-stat">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                    <span>500+ Successful Trades</span>
+                                </div>
+                                <div class="mentor-stat">
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>2K+ Students Trained</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mentor 2: Saqib Khan -->
+                    <div class="swiper-slide">
+                        <div class="mentor-card">
+                            <div class="mentor-avatar-wrapper">
+                                <img src="events-images-and-videos/saqib.jpeg" alt="Saqib Khan"
+                                    class="mentor-avatar-img">
+                                <div class="mentor-glow"></div>
+                            </div>
+                            <h3>Saqib Khan</h3>
+                            <p class="mentor-title">Gold & Currency Expert</p>
+                            <div class="mentor-stats">
+                                <div class="mentor-stat">
+                                    <i class="fa-solid fa-bitcoin-sign"></i>
+                                    <span>$5M+ Portfolio Managed</span>
+                                </div>
+                                <div class="mentor-stat">
+                                    <i class="fa-solid fa-trophy"></i>
+                                    <span>85% Win Rate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- Mentor 3: Uzair Khan -->
+                    <div class="swiper-slide">
+                        <div class="mentor-card">
+                            <div class="mentor-avatar-wrapper">
+                                <img src="events-images-and-videos/uzair.jpeg" alt="Uzair Khan"
+                                    class="mentor-avatar-img">
+                                <div class="mentor-glow"></div>
+                            </div>
+                            <h3>Uzair Khan</h3>
+                            <p class="mentor-title">Technical Analysis Pro</p>
+                            <div class="mentor-stats">
+                                <div class="mentor-stat">
+                                    <i class="fa-solid fa-wave-square"></i>
+                                    <span>EW Analyst</span>
+                                </div>
+                                <div class="mentor-stat">
+                                    <i class="fa-solid fa-bolt"></i>
+                                    <span>Scalping Master</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper Navigation -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academy Highlights Section -->
+    <section class="academy-highlights" id="highlights">
+        <div class="container">
+            <div class="highlights-container">
+                <div class="highlights-left" data-aos="fade-right">
+                    <span class="label-small">Academy Highlights</span>
+                    <h2>Opening Academy. <span class="highlight">Caremoney.</span></h2>
+                    <p>Experience the energy of our physical trading floor and community gatherings. We don't just trade
+                        online; we build lasting connections and share knowledge through real-world events.</p>
+                    <a href="academy-highlights.html" class="btn btn-primary">View Full Gallery</a>
+                </div>
+
+                <div class="highlights-right" data-aos="fade-up" data-aos-duration="600">
+                    <div class="featured-video-box">
+                        <div class="video-thumbnail-wrapper">
+                            <video src="events-images-and-videos/introduction.mp4" muted loop playsinline></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Carousel -->
+            <div class="academy-carousel-wrapper" data-aos="fade-up">
+                <h4 class="carousel-title">Event Highlights</h4>
+                <div class="swiper academy-carousel image-carousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="strip-item open-media" data-type="image"
+                                data-src="events-images-and-videos/opening-caremony-1.jpeg">
+                                <img src="events-images-and-videos/opening-caremony-1.jpeg" alt="Opening Ceremony">
+                                <div class="strip-overlay"><i class="fa-solid fa-expand"></i></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="strip-item open-media" data-type="image"
+                                data-src="events-images-and-videos/bussniess-expo-at-khushal-5.jpeg">
+                                <img src="events-images-and-videos/bussniess-expo-at-khushal-5.jpeg"
+                                    alt="Business Expo">
+                                <div class="strip-overlay"><i class="fa-solid fa-expand"></i></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="strip-item open-media" data-type="image"
+                                data-src="events-images-and-videos/siminar-1.jpeg">
+                                <img src="events-images-and-videos/siminar-1.jpeg" alt="Seminar Session">
+                                <div class="strip-overlay"><i class="fa-solid fa-expand"></i></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="strip-item open-media" data-type="image"
+                                data-src="events-images-and-videos/siminar-2.jpeg">
+                                <img src="events-images-and-videos/siminar-2.jpeg" alt="Academy Workshop">
+                                <div class="strip-overlay"><i class="fa-solid fa-expand"></i></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="strip-item open-media" data-type="image"
+                                data-src="events-images-and-videos/laptop-winner.jpeg">
+                                <img src="events-images-and-videos/laptop-winner.jpeg" alt="Laptop Award">
+                                <div class="strip-overlay"><i class="fa-solid fa-expand"></i></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="strip-item open-media" data-type="image"
+                                data-src="events-images-and-videos/meet-influncer.jpeg">
+                                <img src="events-images-and-videos/meet-influncer.jpeg" alt="Meet Influencer">
+                                <div class="strip-overlay"><i class="fa-solid fa-expand"></i></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="strip-item open-media" data-type="image"
+                                data-src="events-images-and-videos/bussniess-expo-at-khushal-6.jpeg">
+                                <img src="events-images-and-videos/bussniess-expo-at-khushal-6.jpeg"
+                                    alt="Business Expo Event">
+                                <div class="strip-overlay"><i class="fa-solid fa-expand"></i></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="strip-item open-media" data-type="image"
+                                data-src="events-images-and-videos/siminar-3.jpeg">
+                                <img src="events-images-and-videos/siminar-3.jpeg" alt="Seminar Interaction">
+                                <div class="strip-overlay"><i class="fa-solid fa-expand"></i></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="strip-item open-media" data-type="image"
+                                data-src="events-images-and-videos/siminar-4.jpeg">
+                                <img src="events-images-and-videos/siminar-4.jpeg" alt="Trading Discussion">
+                                <div class="strip-overlay"><i class="fa-solid fa-expand"></i></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="strip-item open-media" data-type="image"
+                                data-src="events-images-and-videos/siminar-5.jpeg">
+                                <img src="events-images-and-videos/siminar-5.jpeg" alt="Expert Insights">
+                                <div class="strip-overlay"><i class="fa-solid fa-expand"></i></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="strip-item open-media" data-type="image"
+                                data-src="events-images-and-videos/siminar-6.jpeg">
+                                <img src="events-images-and-videos/siminar-6.jpeg" alt="Community Gathering">
+                                <div class="strip-overlay"><i class="fa-solid fa-expand"></i></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="strip-item open-media" data-type="image"
+                                data-src="events-images-and-videos/hero-banner--1.jpeg">
+                                <img src="events-images-and-videos/hero-banner--1.jpeg" alt="Hero Event Banner">
+                                <div class="strip-overlay"><i class="fa-solid fa-expand"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <!-- Video Carousel -->
+            <div class="academy-carousel-wrapper" data-aos="fade-up" data-aos-delay="200">
+                <h4 class="carousel-title">Academy Clips</h4>
+                <div class="swiper academy-carousel video-carousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="video-frame-item">
+                                <video src="events-images-and-videos/bussniess-expo-at-khushal-1.mp4" muted loop
+                                    playsinline></video>
+                                <span class="video-frame-badge">Expo Clip 1</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video-frame-item">
+                                <video src="events-images-and-videos/bussniess-expo-at-khushal-2.mp4" muted loop
+                                    playsinline></video>
+                                <span class="video-frame-badge">Expo Clip 2</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video-frame-item">
+                                <video src="events-images-and-videos/opening-caremony-2.mp4" muted loop
+                                    playsinline></video>
+                                <span class="video-frame-badge">Opening Ceremony</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video-frame-item">
+                                <video src="events-images-and-videos/opening-caremony-3.mp4" muted loop
+                                    playsinline></video>
+                                <span class="video-frame-badge">Ceremony Highlights</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video-frame-item">
+                                <video src="events-images-and-videos/whatsapp-video-2026-02-21-at-3.40.03-am-1.mp4"
+                                    muted loop playsinline></video>
+                                <span class="video-frame-badge">Academy Clip</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video-frame-item">
+                                <video src="events-images-and-videos/whatsapp-video-2026-02-25-at-3.57.41-pm.mp4" muted
+                                    loop playsinline></video>
+                                <span class="video-frame-badge">Latest Event</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section with Running Carousel -->
+
+    <section class="testimonials-section">
+        <div class="container" style="max-width: 100%; padding: 0;">
+            <div class="section-header" style="padding: 0 5%;" data-aos="fade-up">
+                <h2>SPROFITZONE <span class="highlight">COMMUNITY FEEDBACK</span></h2>
+                <p>What our members say about us.</p>
+            </div>
+
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <!-- First Set of 13 Items -->
+                    <div class="feedback-card">
+                        <p>"I’ve tried a few signal groups before, but most of them just spam trades without explaining
+                            much. Sprofitzone is different. The quality of the crypto signals is actually high, and I
+                            like that they don't over-trade. I started with the one-day pass to test it out, and now I’m
+                            on the monthly. Definitely worth the $50 for the peace of mind."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4>Wei-Ting L.</h4><span>Monthly</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <p>"Good service for Forex. I am quite busy with my day job, so having these signals sent to my
+                            phone helps a lot. The entry and exit points are clear. Sometimes a trade hits the stop
+                            loss, but the wins are much bigger, so the account is growing. Very professional team."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4>Nguyen Minh</h4><span>Pro Member</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <p>"To be honest, I was skeptical about the $25 fee at first, but the accuracy is solid. The
+                            mentorship program is where the real value is. They don't just give you a fish; they teach
+                            you how to fish. The lifetime deal for $499 is a steal if you’re serious about making this a
+                            long-term career."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4>Rajesh Kumar</h4><span>Lifetime</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <p>"Very disciplined approach to the market. I appreciate the focus on risk management. The
+                            signals aren't gambling; you can see there is a real strategy behind the Forex pairs they
+                            pick. Very clean website, and the support team is helpful when I had questions about the
+                            mentorship."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4>Kenji Sato</h4><span>Pro Member</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <p>"Been using Sprofitzone for about three months now. What I love is the transparency. They
+                            don't hide the losses, which makes me trust the wins even more. The gold signals have been
+                            particularly spot on lately. If you're tired of 'get rich quick' scams, give these guys a
+                            go."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4>Sarah J.</h4><span>Pro Member</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <p>"Solid analysis. I use the quarterly mentorship, and it has completely changed how I look at
+                            the charts. The signals are a great bonus, but the market breakdown they provide is in a
+                            class of its own. It's a very reliable system for anyone trading Crypto or FX."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4>Lukas Weber</h4><span>Quarterly</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <p>"Finally, a group that knows what they are doing. The One Day Pass for $4 is such a smart
+                            idea—it let me see the quality before I committed to the bigger plans. I’ve had 4 winning
+                            trades in a row this week. Great community and very easy to follow, even if you are not an
+                            expert yet."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4>Marco G.</h4><span>Pro Member</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <p>"I’ve been burned by 'gurus' on social media before, so I went in with low expectations. But
+                            Sprofitzone actually delivers on the risk-to-reward ratio. The US30 and NAS100 signals are
+                            surprisingly sharp during the New York open. It’s been about a month, and I've already made
+                            back my subscription fee several times over. If you want a no-fluff approach to the markets,
+                            this is it."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4>Chris J. Walker</h4><span>Monthly</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <p>"I started with the 1-day pass just to check the accuracy during the London session. The
+                            Forex signals were hit after hit. In Pakistan, finding a mentor who actually knows what
+                            they’re doing is hard, but the Sprofitzone team is very professional. The weekly market
+                            breakdown is great for learning while earning. Already upgraded to the quarterly plan."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4>Zoya Khan</h4><span>Quarterly</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate for seamless loop -->
+                    <div class="feedback-card">
+                        <p>"I’ve tried a few signal groups before, but most of them just spam trades without explaining
+                            much. Sprofitzone is different. The quality of the crypto signals is actually high, and I
+                            like that they don't over-trade. I started with the one-day pass to test it out, and now I’m
+                            on the monthly. Definitely worth the $50 for the peace of mind."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4>Wei-Ting L.</h4><span>Monthly</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <p>"Good service for Forex. I am quite busy with my day job, so having these signals sent to my
+                            phone helps a lot. The entry and exit points are clear. Sometimes a trade hits the stop
+                            loss, but the wins are much bigger, so the account is growing. Very professional team."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4>Nguyen Minh</h4><span>Pro Member</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <p>"To be honest, I was skeptical about the $25 fee at first, but the accuracy is solid. The
+                            mentorship program is where the real value is. They don't just give you a fish; they teach
+                            you how to fish. The lifetime deal for $499 is a steal if you’re serious about making this a
+                            long-term career."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4>Rajesh Kumar</h4><span>Lifetime</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <p>"Very disciplined approach to the market. I appreciate the focus on risk management. The
+                            signals aren't gambling; you can see there is a real strategy behind the Forex pairs they
+                            pick. Very clean website, and the support team is helpful when I had questions about the
+                            mentorship."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4>Kenji Sato</h4><span>Pro Member</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <p>"Been using Sprofitzone for about three months now. What I love is the transparency. They
+                            don't hide the losses, which makes me trust the wins even more. The gold signals have been
+                            particularly spot on lately. If you're tired of 'get rich quick' scams, give these guys a
+                            go."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4>Sarah J.</h4><span>Pro Member</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <p>"Solid analysis. I use the quarterly mentorship, and it has completely changed how I look at
+                            the charts. The signals are a great bonus, but the market breakdown they provide is in a
+                            class of its own. It's a very reliable system for anyone trading Crypto or FX."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4>Lukas Weber</h4><span>Quarterly</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <p>"Finally, a group that knows what they are doing. The One Day Pass for $4 is such a smart
+                            idea—it let me see the quality before I committed to the bigger plans. I’ve had 4 winning
+                            trades in a row this week. Great community and very easy to follow, even if you are not an
+                            expert yet."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4>Marco G.</h4><span>Pro Member</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <p>"I’ve been burned by 'gurus' on social media before, so I went in with low expectations. But
+                            Sprofitzone actually delivers on the risk-to-reward ratio. The US30 and NAS100 signals are
+                            surprisingly sharp during the New York open. It’s been about a month, and I've already made
+                            back my subscription fee several times over. If you want a no-fluff approach to the markets,
+                            this is it."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4>Chris J. Walker</h4><span>Monthly</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <p>"I started with the 1-day pass just to check the accuracy during the London session. The
+                            Forex signals were hit after hit. In Pakistan, finding a mentor who actually knows what
+                            they’re doing is hard, but the Sprofitzone team is very professional. The weekly market
+                            breakdown is great for learning while earning. Already upgraded to the quarterly plan."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <h4>Zoya Khan</h4><span>Quarterly</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>FREQUENTLY <span class="highlight">ASKED QUESTIONS?</span></h2>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">What is Sprofitzone? <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Sprofitzone is a premier crypto trading community offering AI-driven signals, educational
+                            resources, and expert market analysis.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How accurate are the signals? <i
+                            class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Our signals have a historical accuracy rate of over 85%, backed by both AI algorithms and
+                            professional analysis.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I cancel anytime? <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Yes, all membership plans are flexible. you can cancel your subscription at any time.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Is it suitable for beginners? <i
+                            class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Absolutely! We have a dedicated "Day Trader" plan and educational resources specifically
+                            designed for beginners.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weekly Market Reports / Newsletter -->
+            <div class="newsletter-box">
+                <div class="newsletter-content">
+                    <h3>WEEKLY MARKET <span class="highlight">REPORTS</span></h3>
+                    <p>Get the latest crypto news delivered to your inbox.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="button" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="events-images-and-videos/logo.jpeg" alt="Sprofitzone Logo" class="logo-img"
+                            style="height: 45px; border-radius: 5px;">
+                    </a>
+                    <p class="footer-email"><i class="fa-regular fa-envelope"></i> sprofitzone103@gmail.com</p>
+                    <p class="footer-phone"><i class="fa-solid fa-phone"></i> 03419897103</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.facebook.com/share/p/1CA8AUmeFK/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="contact.html">Online Support</a></li>
+                        <li><a href="terms-conditions.html#refund">Refund and Cancellation</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#plans">Plans</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                        <li><a href="academy.html">Academy</a></li>
+                        <li><a href="#">Research Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Cancel Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Trading Guides</h4>
+                    <ul>
+                        <li><a href="trading-guides.html#research-education">Research and Education</a></li>
+                        <li><a href="trading-guides.html#start-small">Start Small and Manage Risk</a></li>
+                        <li><a href="trading-guides.html#security">Trading Security and Best Practices</a></li>
+                        <li><a href="trading-guides.html#trading-strategy">Develop a Trading Strategy</a></li>
+                        <li><a href="trading-guides.html#risk-management">Develop a Risk Management Strategy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="disclaimer">WARNING: Trading in financial markets involves significant risk. All educational
+                    content and mentorship provided by SPROFITZONE (SPZ) is for informational and educational purposes
+                    only and does not constitute financial advice. Past performance does not guarantee future results.
+                </p>
+                <p class="copyright">&copy; 2016 - 2026 Sprofitzone Org. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="modal-overlay">
+        <div class="payment-card">
+            <button class="close-modal"><i class="fa-solid fa-times"></i></button>
+            <h2>Complete Your <span class="highlight">Subscription</span></h2>
+            <p id="selected-plan-text" style="margin-bottom: 30px; font-weight: 600; color: #fff;">Plan: <span
+                    class="highlight">Monthly</span> - <span class="highlight">$59</span></p>
+
+            <div class="payment-methods-grid">
+                <button class="method-btn active" data-method="easypaisa">
+                    <i class="fa-solid fa-wallet"></i> Easy Paisa Wallet
+                </button>
+                <button class="method-btn" data-method="jazzcash">
+                    <i class="fa-solid fa-mobile-screen"></i> JazzCash Wallet
+                </button>
+                <button class="method-btn" data-method="bank">
+                    <i class="fa-solid fa-building-columns"></i> Bank Transfer
+                </button>
+                <button class="method-btn" data-method="crypto">
+                    <i class="fa-brands fa-bitcoin"></i> Crypto Payment
+                </button>
+            </div>
+
+            <div id="payment-details-box" class="payment-details-box">
+                <!-- Details will be injected here via JS -->
+            </div>
+
+            <div class="payment-guide">
+                <p><i class="fa-solid fa-circle-info"></i> After sending the payment, please send a screenshot of the
+                    transaction receipt to us on WhatsApp for manual verification and account activation.</p>
+                <a href="https://wa.me/923419897103" class="btn btn-primary-gradient whatsapp-verify-btn"
+                    target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> Send Screenshot on WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- End of Body -->
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/923419897103" class="floating-whatsapp" target="_blank" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Floating Feedback Button -->
+    <button id="feedback-btn" class="floating-feedback" title="Give Feedback">
+        <i class="fa-solid fa-comment-dots"></i> Feedback
+    </button>
+
+    <!-- Feedback Modal -->
+    <div id="feedback-modal" class="modal-overlay">
+        <div class="payment-card feedback-popup-card">
+            <button class="close-feedback"><i class="fa-solid fa-times"></i></button>
+            <h2>SEND <span class="highlight">FEEDBACK</span></h2>
+            <p style="margin-bottom: 25px; color: var(--text-gray);">We value your opinion! Share your thoughts with us.
+            </p>
+            <form id="feedback-form" class="feedback-form">
+                <div class="form-group">
+                    <input type="text" id="fb-name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="fb-email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="fb-message" placeholder="How can we improve? (Your feedback...)" rows="4"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary-gradient w-full">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Media Modal -->
+    <div class="media-modal" id="media-modal">
+        <div class="media-modal-close" id="close-media-modal">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="media-modal-content">
+            <div class="media-modal-body" id="media-modal-body">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprofitzone | Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://api.dicebear.com/7.x/avataaars/svg?seed=Fox&backgroundColor=ff7f00">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="events-images-and-videos/logo.jpeg" alt="Sprofitzone Logo" class="logo-img"
+                    style="height: 45px; border-radius: 5px;">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="mentorship.html">Mentorship Program</a></li>
+                <li><a href="academy.html" class="active">Academy</a></li>
+                <li><a href="academy-highlights.html">Academy Highlights</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="index.html#plans" class="btn btn-primary desktop-only-btn">Join Now</a>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <i class="fa-solid fa-xmark close-menu"></i>
+            <ul class="mobile-nav-links">
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li><a href="partners.html" class="mobile-link">Partners</a></li>
+                <li><a href="mentorship.html" class="mobile-link">Mentorship Program</a></li>
+                <li><a href="academy.html" class="mobile-link">Academy</a></li>
+                <li><a href="academy-highlights.html" class="mobile-link">Academy Highlights</a></li>
+                <li><a href="about.html" class="mobile-link">About</a></li>
+                <li><a href="contact.html" class="mobile-link">Contact Us</a></li>
+            </ul>
+            <a href="index.html#plans" class="mobile-join-btn">Join Now</a>
+        </div>
+    </header>
+
+    <!-- Academy Hero -->
+    <section class="economy-hero academy-hero" id="academy">
+        <div class="container hero-content">
+            <h1>SPROFITZONE <span class="highlight">ACADEMY</span></h1>
+            <p>Master the art of crypto trading with our comprehensive guides and articles.</p>
+
+            <div class="academy-search-box">
+                <input type="text" placeholder="Search for topics, guides, signals...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suggested Section -->
+    <section class="suggested-section">
+        <div class="container">
+            <span class="section-label">Suggested for you</span>
+            <div class="suggested-grid">
+                <!-- Mini Card 1 -->
+                <div class="mini-article-card" onclick="window.location.href='articles/bitcoin-guide.html'">
+                    <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&q=80&w=300"
+                        alt="Bitcoin">
+                    <div class="mini-article-info">
+                        <h4>The Ultimate Guide to Bitcoin Signals Live</h4>
+                    </div>
+                </div>
+                <!-- Mini Card 2 -->
+                <div class="mini-article-card" onclick="window.location.href='articles/trading-signals.html'">
+                    <img src="images/01_uncovering_the_best_bitcoin_signals_telegram_channels_for_profitable_trading.jpg"
+                        alt="Signals">
+                    <div class="mini-article-info">
+                        <h4>Uncovering the Best Bitcoin Signals Telegram Channels</h4>
+                    </div>
+                </div>
+                <!-- Mini Card 3 -->
+                <div class="mini-article-card" onclick="window.location.href='articles/discord-group.html'">
+                    <img src="images/01_reasons_why_you_need_to_join_a_bitcoin_signals_discord_group_today.jpg"
+                        alt="Trading">
+                    <div class="mini-article-info">
+                        <h4>Reasons Why You Need to Join a Bitcoin Signals Discord Group Today</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Content -->
+    <section class="latest-content" style="padding: 60px 0;">
+        <div class="container">
+            <div class="section-header"
+                style="text-align: left; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: flex-end;">
+                <h2 style="font-size: 2rem;">Latest <span class="highlight">Content</span></h2>
+                <a href="all-articles.html" style="color: #888; text-decoration: none; font-size: 0.9rem;">See All</a>
+            </div>
+
+            <div class="article-grid">
+                <!-- Article 1: Forex -->
+                <div class="article-card">
+                    <img src="images/01_uncovering_the_best_bitcoin_signals_telegram_channels_for_profitable_trading.jpg"
+                        class="article-image" alt="Forex">
+                    <div class="article-content">
+                        <span
+                            style="background: var(--primary); padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; color: #000; margin-bottom: 10px; display: inline-block;">Forex</span>
+                        <h3>Forex Trading Essentials for Beginners</h3>
+                        <p>Learn the basics of the world's largest financial market.</p>
+                        <a href="articles/forex-essentials.html" class="read-more">Read Article <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Article 2 -->
+                <div class="article-card">
+                    <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&q=80&w=600"
+                        class="article-image" alt="Bitcoin">
+                    <div class="article-content">
+                        <span
+                            style="background: #333; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; color: #fff; margin-bottom: 10px; display: inline-block;">Crypto</span>
+                        <h3>The Ultimate Guide to Bitcoin Signals Live</h3>
+                        <p>Learn how to boost your trading strategy effectively.</p>
+                        <a href="articles/bitcoin-guide.html" class="read-more">Read Article <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Article 2 -->
+                <div class="article-card">
+                    <img src="images/01_uncovering_the_best_bitcoin_signals_telegram_channels_for_profitable_trading.jpg"
+                        class="article-image" alt="Telegram">
+                    <div class="article-content">
+                        <h3>Best Bitcoin Signals Telegram Channels</h3>
+                        <p>Find out where the pros are chatting and trading.</p>
+                        <a href="articles/trading-signals.html" class="read-more">Read Article <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Article 3 -->
+                <div class="article-card">
+                    <img src="images/01_reasons_why_you_need_to_join_a_bitcoin_signals_discord_group_today.jpg"
+                        class="article-image" alt="Discord">
+                    <div class="article-content">
+                        <h3>Join a Bitcoin Signals Discord Group Today</h3>
+                        <p>Why community is your biggest asset in crypto.</p>
+                        <a href="articles/discord-group.html" class="read-more">Read Article <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Crypto for Beginners -->
+    <section class="beginners-section" style="padding: 60px 0;">
+        <div class="container">
+            <div class="section-header"
+                style="text-align: left; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: flex-end;">
+                <h2 style="font-size: 2rem;">Crypto for <span class="highlight">Beginners</span></h2>
+                <a href="all-articles.html" style="color: #888; text-decoration: none; font-size: 0.9rem;">See All</a>
+            </div>
+
+            <div class="article-grid">
+                <div class="article-card">
+                    <img src="images/crypto-signalss.jpeg" class="article-image" alt="Beginners">
+                    <div class="article-content">
+                        <span
+                            style="background: #333; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; color: #fff; margin-bottom: 10px; display: inline-block;">Mining</span>
+                        <h3>Top Trading Signals Strategies for Beginners</h3>
+                        <a href="articles/strategies-beginners.html" class="read-more">Read Article <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=600"
+                        class="article-image" alt="Guide">
+                    <div class="article-content">
+                        <span
+                            style="background: #333; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; color: #fff; margin-bottom: 10px; display: inline-block;">Crypto</span>
+                        <h3>Beginner's Guide To Understanding Crypto Signals</h3>
+                        <a href="articles/crypto-signals-guide.html" class="read-more">Read Article <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <img src="https://images.unsplash.com/photo-1620266757065-5814239881fd?auto=format&fit=crop&q=80&w=600"
+                        class="article-image" alt="Wallet">
+                    <div class="article-content">
+                        <span
+                            style="background: #333; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; color: #fff; margin-bottom: 10px; display: inline-block;">Security</span>
+                        <h3>How to Secure Your Crypto Wallet</h3>
+                        <a href="articles/wallet-security.html" class="read-more">Read Article <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Glossary -->
+    <section class="glossary-section">
+        <div class="container">
+            <h2 style="margin-bottom: 40px;">Glossary</h2>
+            <div class="glossary-grid">
+                <div class="glossary-item">
+                    <h1 style="color: var(--primary); font-size: 2.5rem; margin-bottom: 10px;">435</h1>
+                    <p>That's the number of terms in our glossary. How many do you know?</p>
+                    <div style="margin-top: 20px; display: flex; gap: 10px;">
+                        <input type="text" placeholder="Search glossary"
+                            style="background: #222; border: none; padding: 10px 15px; border-radius: 25px; color: white;">
+                        <button class="btn btn-primary" style="padding: 10px 20px;">Search</button>
+                    </div>
+                </div>
+                <div class="glossary-item">
+                    <h4><i class="fa-solid fa-quote-left" style="color: var(--primary);"></i> Whitelist / Crypto Trading
+                    </h4>
+                    <p>A list of allowed or trusted individuals, computer programs, or cryptocurrency addresses...</p>
+                    <a href="articles/crypto-trading-whitelist.html"
+                        style="color: var(--primary); font-size: 0.8rem; margin-top: 10px; display: inline-block;">Full
+                        definition <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="glossary-item">
+                    <h4><i class="fa-solid fa-quote-left" style="color: var(--primary);"></i> Oracle</h4>
+                    <p>A data source or feed from a third party used for determining outcomes for smart contracts.</p>
+                    <a href="#"
+                        style="color: var(--primary); font-size: 0.8rem; margin-top: 10px; display: inline-block;">Full
+                        definition <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index) -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="events-images-and-videos/logo.jpeg" alt="Sprofitzone Logo" class="logo-img"
+                            style="height: 45px; border-radius: 5px;">
+                    </a>
+                    <p class="footer-email"><i class="fa-regular fa-envelope"></i> sprofitzone103@gmail.com</p>
+                    <p class="footer-phone"><i class="fa-solid fa-phone"></i> 03419897103</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.facebook.com/share/p/1CA8AUmeFK/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="contact.html">Online Support</a></li>
+                        <li><a href="terms-conditions.html#refund">Refund and Cancellation</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#plans">Plans</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                        <li><a href="academy.html">Academy</a></li>
+                        <li><a href="#">Research Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Cancel Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Trading Guides</h4>
+                    <ul>
+                        <li><a href="trading-guides.html#research-education">Research and Education</a></li>
+                        <li><a href="trading-guides.html#start-small">Start Small and Manage Risk</a></li>
+                        <li><a href="trading-guides.html#security">Trading Security and Best Practices</a></li>
+                        <li><a href="trading-guides.html#trading-strategy">Develop a Trading Strategy</a></li>
+                        <li><a href="trading-guides.html#risk-management">Develop a Risk Management Strategy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="disclaimer">WARNING: Trading in financial markets involves significant risk. All educational
+                    content and mentorship provided by SPROFITZONE (SPZ) is for informational and educational purposes
+                    only and does not constitute financial advice. Past performance does not guarantee future results.
+                </p>
+                <p class="copyright">&copy; 2016 - 2026 Sprofitzone Org. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/923419897103" class="floating-whatsapp" target="_blank" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Floating Feedback Button -->
+    <button id="feedback-btn" class="floating-feedback" title="Give Feedback">
+        <i class="fa-solid fa-comment-dots"></i> Feedback
+    </button>
+
+    <!-- Feedback Modal -->
+    <div id="feedback-modal" class="modal-overlay">
+        <div class="payment-card feedback-popup-card">
+            <button class="close-feedback"><i class="fa-solid fa-times"></i></button>
+            <h2>SEND <span class="highlight">FEEDBACK</span></h2>
+            <p style="margin-bottom: 25px; color: var(--text-gray);">We value your opinion! Share your thoughts with us.
+            </p>
+            <form id="feedback-form" class="feedback-form">
+                <div class="form-group">
+                    <input type="text" id="fb-name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="fb-email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="fb-message" placeholder="How can we improve? (Your feedback...)" rows="4"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary-gradient w-full">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

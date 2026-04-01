@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Crypto Signals | Sprofitzone Academy</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="../index.html" class="logo"><span style="color: var(--primary);">SPZ</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../partners.html">Partners</a></li>
+                <li><a href="../mentorship.html">Mentorship Program</a></li>
+                <li><a href="../academy.html">Academy</a></li>
+                <li><a href="../about.html">About</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="../index.html#plans" class="btn btn-primary desktop-only-btn"
+                    style="padding: 8px 15px; font-size: 0.9rem;">Join Now</a>
+                <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <i class="fa-solid fa-xmark close-menu"></i>
+            <ul class="mobile-nav-links">
+                <li><a href="../index.html" class="mobile-link">Home</a></li>
+                <li><a href="../partners.html" class="mobile-link">Partners</a></li>
+                <li><a href="../mentorship.html" class="mobile-link">Mentorship Program</a></li>
+                <li><a href="../academy.html" class="mobile-link">Academy</a></li>
+            </ul>
+            <a href="../index.html#plans" class="mobile-join-btn">Join Now</a>
+        </div>
+    </header>
+
+    <section class="article-detail-hero"
+        style="background-image: url('https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&q=80&w=1600');">
+        <div class="article-overlay"></div>
+        <div class="container article-hero-content">
+            <a href="../academy.html"
+                style="color: var(--primary); text-decoration: none; font-weight: 600; margin-bottom: 20px; display: inline-block;"><i
+                    class="fa-solid fa-arrow-left"></i> Back to Academy</a>
+            <h1 style="font-size: 2.5rem; margin-bottom: 20px;">Beginner's Guide To Understanding Crypto Signals</h1>
+            <div class="article-meta">
+                <span><i class="fa-regular fa-clock"></i> 4 min read</span>
+                <span style="margin: 0 10px;">|</span>
+                <span><i class="fa-regular fa-user"></i> By Sprofitzone Team</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="container article-body-container">
+        <div class="article-body">
+            <p>You've signed up for a signal channel, and your phone buzzes. "BTC/USDT LONG ENTRY 95000 TP 98000 SL
+                94000". What does it all mean? Let's break down the anatomy of a trading signal.</p>
+
+            <h2>The Components</h2>
+            <ul>
+                <li><strong>Pair:</strong> The assets being traded (e.g., BTC/USDT).</li>
+                <li><strong>Direction:</strong> Long (Buy) or Short (Sell).</li>
+                <li><strong>Entry Range:</strong> The price zone where it's safe to open the trade.</li>
+                <li><strong>Targets (TP):</strong> Price points where you should sell portions of your position to lock
+                    in profit.</li>
+                <li><strong>Stop Loss (SL):</strong> The specific price where you admit you were wrong and exit to
+                    prevent further loss.</li>
+            </ul>
+
+            <img src="https://images.unsplash.com/photo-1624969862293-b749659ccc4e?auto=format&fit=crop&q=80&w=1000"
+                alt="Technical Analysis" style="width: 100%; border-radius: 10px; margin: 20px 0;">
+
+            <h2>Leverage Explained</h2>
+            <p>Signals often specify leverage (e.g., 10x). This means you are borrowing money to increase your position
+                size. While it amplifies gains, it also amplifies losses. <strong>Beginners should start with 1x (spot)
+                    or very low leverage (2-3x).</strong></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p class="footer-email" style="margin-bottom: 10px;"><i class="fa-regular fa-envelope"></i>
+                sprofitzone103@gmail.com</p>
+            <p class="footer-phone" style="margin-bottom: 20px;"><i class="fa-solid fa-phone"></i> 03419897103</p>
+            <div class="copyright">&copy; 2026 Sprofitzone. All rights reserved.</div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/923419897103" class="floating-whatsapp" target="_blank" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Floating Feedback Button -->
+    <button id="feedback-btn" class="floating-feedback" title="Give Feedback">
+        <i class="fa-solid fa-comment-dots"></i> Feedback
+    </button>
+
+    <!-- Feedback Modal -->
+    <div id="feedback-modal" class="modal-overlay">
+        <div class="payment-card feedback-popup-card">
+            <button class="close-feedback"><i class="fa-solid fa-times"></i></button>
+            <h2>SEND <span class="highlight">FEEDBACK</span></h2>
+            <p style="margin-bottom: 25px; color: var(--text-gray);">We value your opinion! Share your thoughts with us.
+            </p>
+            <form id="feedback-form" class="feedback-form">
+                <div class="form-group">
+                    <input type="text" id="fb-name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="fb-email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="fb-message" placeholder="How can we improve? (Your feedback...)" rows="4"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary-gradient w-full">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
