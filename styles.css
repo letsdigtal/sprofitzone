@@ -5666,3 +5666,34 @@ section.news-ticker {
         font-size: 2rem;
     }
 }
+/* Change header background to white */
+header {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+}
+
+/* Change all menu navigation links to black */
+.nav-links a, 
+.nav-links li,
+.nav-right,
+.nav-right * {
+  color: #000000 !important;
+}
+
+/* Change the logo color to black if it's text or an icon font */
+.logo {
+  color: #000000 !important;
+}
+
+/* Optional: Ensure icons (like search or shopping cart) are also black */
+header svg, 
+header i {
+  color: #000000 !important;
+  fill: #000000 !important;
+}
+
+/* Ensure the hover state also stays black or is clearly visible */
+.nav-links a:hover {
+  color: #000000 !important;
+  opacity: 0.8; /* Slightly transparent on hover for visual feedback */
+}
