@@ -300,7 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="detail-item">
                 <span class="detail-label">Wallet Address</span>
-                <span class="detail-value">TPWwXh7YQBRy1GQqJca6m69n4juWKLxge3</span>
+                <span class="detail-value">Trc20h7YQBRy1GQqJca6m69n4juWKLxge3</span>
             </div>
             <div class="detail-item">
                 <span class="detail-label">Account Holder</span>
