@@ -2,7 +2,7 @@
 
 // ==== THEME INJECTION: runs immediately so no flash of wrong theme ====
 (function () {
-    const saved = localStorage.getItem('S Profit ZoneTheme') || 'light';
+    const saved = localStorage.getItem('S Profit ZoneTheme') || 'dark';
     document.documentElement.setAttribute('data-theme', saved);
     document.body && document.body.classList.toggle('light-mode', saved === 'light');
 })();
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Sync active state on switcher buttons
-    const currentTheme = localStorage.getItem('S Profit ZoneTheme') || 'light';
+    const currentTheme = localStorage.getItem('S Profit ZoneTheme') || 'dark';
     document.querySelectorAll('.theme-btn[data-theme]').forEach(btn => {
         btn.style.borderColor = btn.dataset.theme === currentTheme ? '#ff7a00' : 'transparent';
     });
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         const light = document.documentElement.getAttribute('data-theme') === 'light';
         if (window.scrollY > 50) {
-            header.style.background = light ? 'rgba(255,255,255,0.98)' : 'rgba(15, 15, 15, 0.98)';
+            header.style.background = light ? 'rgba(15, 15, 15, 0.98)' : 'rgba(255, 255, 255, 0.98)';
             header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.2)';
         } else {
             header.style.background = '';
@@ -296,11 +296,11 @@ document.addEventListener('DOMContentLoaded', () => {
         crypto: `
             <div class="detail-item">
                 <span class="detail-label">Network</span>
-                <span class="detail-value">USDT (TRC20)</span>
+                <span class="detail-value">USDT (Trc20)</span>
             </div>
             <div class="detail-item">
                 <span class="detail-label">Wallet Address</span>
-                <span class="detail-value">Trc20h7YQBRy1GQqJca6m69n4juWKLxge3</span>
+                <span class="detail-value">TPWwXh7YQBRy1GQqJca6m69n4juWKLxge3</span>
             </div>
             <div class="detail-item">
                 <span class="detail-label">Account Holder</span>
@@ -739,7 +739,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Theme Switcher Logic - Uses event delegation so it works on injected buttons also
 document.addEventListener('DOMContentLoaded', () => {
     const root = document.documentElement;
-    const savedTheme = localStorage.getItem('S Profit ZoneTheme') || 'light';
+    const savedTheme = localStorage.getItem('S Profit ZoneTheme') || 'dark';
     applyTheme(savedTheme);
 
     // Event delegation on body for theme buttons
