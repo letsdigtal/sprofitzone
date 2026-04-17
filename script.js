@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         const light = document.documentElement.getAttribute('data-theme') === 'light';
         if (window.scrollY > 50) {
-            header.style.background = light ? 'rgba(255,255,255,0.98)' : 'rgba(15, 15, 15, 0.98)';
+            header.style.background = light ? 'rgba(255,255,255,0.98)' : 'rgba(255, 255, 255, 0.98)';
             header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.2)';
         } else {
             header.style.background = '';
@@ -771,3 +771,72 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Sound logic for buttons
+document.addEventListener('DOMContentLoaded', () => {
+    // We defer AudioContext creation until first click per browser policy
+    let audioCtx = null;
+
+    function playButtonSound(type) {
+        if (!audioCtx) {
+            const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+            if (!AudioContextClass) return;
+            audioCtx = new AudioContextClass();
+        }
+        if (audioCtx.state === 'suspended') {
+            audioCtx.resume();
+        }
+
+        const oscillator = audioCtx.createOscillator();
+        const gainNode = audioCtx.createGain();
+
+        oscillator.connect(gainNode);
+        gainNode.connect(audioCtx.destination);
+
+        if (type === 'primary') {
+            // Success/Action sound
+            oscillator.type = 'sine';
+            oscillator.frequency.setValueAtTime(440, audioCtx.currentTime);
+            oscillator.frequency.exponentialRampToValueAtTime(880, audioCtx.currentTime + 0.1);
+            gainNode.gain.setValueAtTime(0.3, audioCtx.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.1);
+            oscillator.start(audioCtx.currentTime);
+            oscillator.stop(audioCtx.currentTime + 0.1);
+        } else if (type === 'secondary') {
+            // Minor action sound
+            oscillator.type = 'triangle';
+            oscillator.frequency.setValueAtTime(500, audioCtx.currentTime);
+            oscillator.frequency.exponentialRampToValueAtTime(300, audioCtx.currentTime + 0.15);
+            gainNode.gain.setValueAtTime(0.3, audioCtx.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.15);
+            oscillator.start(audioCtx.currentTime);
+            oscillator.stop(audioCtx.currentTime + 0.15);
+        } else {
+            // General button sound
+            oscillator.type = 'sine';
+            oscillator.frequency.setValueAtTime(600, audioCtx.currentTime);
+            gainNode.gain.setValueAtTime(0.2, audioCtx.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.1);
+            oscillator.start(audioCtx.currentTime);
+            oscillator.stop(audioCtx.currentTime + 0.1);
+        }
+    }
+
+    document.querySelectorAll('.btn, button, .mobile-link, .nav-links a').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const type = btn.classList.contains('btn-primary') ? 'primary' : 
+                         (btn.classList.contains('btn-secondary-outline') ? 'secondary' : 'other');
+            playButtonSound(type);
+        });
+    });
+});
+
+// Money Ninja Trader Injection
+document.addEventListener('DOMContentLoaded', () => {
+    const ninjaHTML = `
+        <div class="ninja-trader" id="ninja-trader-icon">
+            <i class="fa-solid fa-user-ninja"></i>
+            <i class="fa-solid fa-sack-dollar"></i>
+        </div>
+    `;
+    document.body.insertAdjacentHTML('beforeend', ninjaHTML);
+});

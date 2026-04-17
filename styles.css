@@ -5666,3 +5666,58 @@ section.news-ticker {
         font-size: 2rem;
     }
 }
+
+/* --- Header Override for White Background and Black Text --- */
+header {
+    background-color: #ffffff !important;
+}
+
+header .nav-links a,
+header .nav-links a:visited,
+header .nav-links a:active,
+header .nav-links a:link {
+    color: #000000 !important;
+}
+
+header .hamburger {
+    color: #000000 !important;
+}
+
+/* Money Ninja Trader Animation */
+.ninja-trader {
+  position: fixed;
+  top: 50%;
+  left: -150px;
+  z-index: 9999;
+  font-size: 4rem;
+  color: var(--primary); /* Primary orange */
+  pointer-events: none;
+  filter: drop-shadow(0 5px 15px rgba(255, 127, 0, 0.4));
+  animation: ninjaJumpAcross 12s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.ninja-trader .fa-sack-dollar {
+    color: #85bb65;
+    position: absolute;
+    bottom: -5px;
+    right: -20px;
+    font-size: 2.5rem;
+    animation: bounceMoney 0.4s infinite alternate;
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.5));
+}
+
+@keyframes ninjaJumpAcross {
+  0% { left: -150px; top: 80%; transform: scaleX(1) translateY(0); }
+  15% { left: 15vw; top: 40%; transform: scaleX(1) translateY(-100px) rotate(15deg); }
+  30% { left: 30vw; top: 75%; transform: scaleX(1) translateY(0) rotate(0deg); }
+  45% { left: 45vw; top: 35%; transform: scaleX(1) translateY(-120px) rotate(25deg); }
+  60% { left: 60vw; top: 70%; transform: scaleX(1) translateY(0) rotate(0deg); }
+  75% { left: 75vw; top: 40%; transform: scaleX(1) translateY(-90px) rotate(15deg); }
+  85% { left: 90vw; top: 75%; transform: scaleX(1) translateY(0) rotate(0deg); }
+  100% { left: 110vw; top: 50%; transform: scaleX(1) translateY(-50px); }
+}
+
+@keyframes bounceMoney {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-15px); }
+}
