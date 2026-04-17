@@ -127,7 +127,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(15, 15, 15, 0.85);
+    background: #ffffff;
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-color);
     padding: 15px 0;
@@ -135,7 +135,7 @@ header {
 }
 
 [data-theme="light"] header {
-    background: rgba(255, 255, 255, 0.92);
+    background: #0f0f0f;
     border-bottom: 1px solid var(--primary);
 }
 
@@ -152,6 +152,22 @@ header {
     align-items: center;
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header i,
+header svg {
+    color: #000000 !important;
+}
+
+[data-theme="light"] header i,
+[data-theme="light"] header svg {
+    color: #ffffff !important;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -166,12 +182,16 @@ header {
     font-size: 2.8rem;
     font-weight: 900;
     font-family: 'Outfit', sans-serif;
-    color: var(--text-main);
+    color: #000000;
     letter-spacing: -1px;
     display: flex;
     align-items: baseline;
     line-height: 1;
     transition: transform 0.3s ease, color 0.4s ease;
+}
+
+[data-theme="light"] .logo-text {
+    color: #ffffff;
 }
 
 .highlight-p {
@@ -246,12 +266,18 @@ header {
 .nav-links a:visited,
 .nav-links a:active,
 .nav-links a:link {
-    color: var(--text-main) !important;
-    /* Force white color */
+    color: #000000 !important;
     text-decoration: none;
     font-size: 0.9rem;
     transition: color 0.3s;
     font-weight: 500;
+}
+
+[data-theme="light"] .nav-links a,
+[data-theme="light"] .nav-links a:visited,
+[data-theme="light"] .nav-links a:active,
+[data-theme="light"] .nav-links a:link {
+    color: #ffffff !important;
 }
 
 .nav-links a:hover {
@@ -1369,11 +1395,11 @@ footer {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: white;
+    color: #000000;
 }
 
 [data-theme="light"] .hamburger {
-    color: var(--primary) !important;
+    color: #ffffff !important;
 }
 
 .mobile-menu {
@@ -5665,54 +5691,4 @@ section.news-ticker {
     .article-body h1 {
         font-size: 2rem;
     }
-}
-/* Change header background to white */
-header {
-  background-color: #ffffff !important;
-  background: #ffffff !important;
-}
-
-/* Change all menu navigation links to black */
-.nav-links a, 
-.nav-links li,
-.nav-right,
-.nav-right * {
-  color: #000000 !important;
-}
-
-/* 1. Force Header Background to White */
-header, 
-header.fixed, 
-header.scrolled, 
-.nav-container {
-  background-color: #ffffff !important;
-  background: #ffffff !important;
-  background-image: none !important; /* Removes any background gradients */
-}
-
-/* 2. Force Menu Navigation Links, List Items, and Logo to Black */
-header .nav-links a,
-header .nav-links li,
-header .logo,
-header .logo a,
-header .nav-right,
-header .nav-right * {
-  color: #000000 !important;
-  -webkit-text-fill-color: #000000 !important; /* Ensures color on all browsers */
-}
-
-/* 3. Force Icons (Search, Cart, etc.) to Black */
-header svg, 
-header svg path, 
-header i,
-header [class*="icon"] {
-  fill: #000000 !important;
-  color: #000000 !important;
-  stroke: #000000 !important;
-}
-
-/* 4. Hover State: Keeps it black but adds a subtle fade */
-header .nav-links a:hover {
-  opacity: 0.7 !important;
-  color: #000000 !important;
 }
