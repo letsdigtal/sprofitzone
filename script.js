@@ -286,7 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="detail-item">
                 <span class="detail-label">Account Holder</span>
-                <span class="detail-value">SAQIB ALI</span>
+                <span class="detail-value">SAQIB ULLAH</span>
             </div>
             <div class="detail-item">
                 <span class="detail-label">Account Number (IBAN)</span>
@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="detail-item">
                 <span class="detail-label">Account Holder</span>
-                <span class="detail-value">Muhammad Uzair</span>
+                <span class="detail-value">Muhammad Shahab</span>
             </div>
             <div class="detail-item" style="margin-top: 10px;">
                 <span class="detail-label">Network</span>
