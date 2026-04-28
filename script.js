@@ -262,7 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
         easypaisa: `
             <div class="detail-item">
                 <span class="detail-label">Account Name</span>
-                <span class="detail-value">SAQIB ALI</span>
+                <span class="detail-value">SAQIB ULLAH</span>
             </div>
             <div class="detail-item">
                 <span class="detail-label">EasyPaisa Number</span>
@@ -272,7 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
         jazzcash: `
             <div class="detail-item">
                 <span class="detail-label">Account Name</span>
-                <span class="detail-value">SAQIB ALI</span>
+                <span class="detail-value">SAQIB ULLAH</span>
             </div>
             <div class="detail-item">
                 <span class="detail-label">JazzCash Number</span>
