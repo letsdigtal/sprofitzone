@@ -282,7 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
         bank: `
             <div class="detail-item">
                 <span class="detail-label">Bank Name</span>
-                <span class="detail-value">HBL (Habib Bank Limited)</span>
+                <span class="detail-value">Bank Alfalah</span>
             </div>
             <div class="detail-item">
                 <span class="detail-label">Account Holder</span>
@@ -290,7 +290,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="detail-item">
                 <span class="detail-label">Account Number (IBAN)</span>
-                <span class="detail-value">PK33HABB0012345678901234</span>
+                <span class="detail-value">PK89ALFH5794005001747011</span>
             </div>
         `,
         crypto: `
@@ -300,19 +300,11 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="detail-item">
                 <span class="detail-label">Wallet Address</span>
-                <span class="detail-value">Trc20h7YQBRy1GQqJca6m69n4juWKLxge3</span>
+                <span class="detail-value">TGngDPURK2HcHtvDBXttwq8aKgq7qkPFt1</span>
             </div>
             <div class="detail-item">
                 <span class="detail-label">Account Holder</span>
-                <span class="detail-value">Muhammad Shahab</span>
-            </div>
-            <div class="detail-item" style="margin-top: 10px;">
-                <span class="detail-label">Network</span>
-                <span class="detail-value">BTC (Bitcoin)</span>
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Wallet Address</span>
-                <span class="detail-value">bc1qxy2kg...4zvk2p7vjqf</span>
+                <span class="detail-value">Khaizer</span>
             </div>
         `
     };
