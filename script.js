@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="detail-item">
                 <span class="detail-label">Account Holder</span>
-                <span class="detail-value">Khaizer</span>
+                <span class="detail-value">Saqib Ullah</span>
             </div>
         `
     };
